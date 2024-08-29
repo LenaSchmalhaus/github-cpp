@@ -1,0 +1,5 @@
+﻿  LeneursProjekt.cpp
+C:\Users\l.schmalhaus\source\repos\LeneursProjekt\LeneursProjekt\LeneursProjekt.cpp(49,20): warning C4244: "=": Konvertierung von "double" in "int", möglicher Datenverlust
+C:\Users\l.schmalhaus\source\repos\LeneursProjekt\LeneursProjekt\LeneursProjekt.cpp(50,20): warning C4244: "=": Konvertierung von "double" in "int", möglicher Datenverlust
+C:\Users\l.schmalhaus\source\repos\LeneursProjekt\LeneursProjekt\LeneursProjekt.cpp(51,20): warning C4244: "=": Konvertierung von "double" in "int", möglicher Datenverlust
+  LeneursProjekt.vcxproj -> C:\Users\l.schmalhaus\source\repos\LeneursProjekt\x64\Debug\LeneursProjekt.exe
