@@ -18,13 +18,5 @@
     <ClCompile Include="ConsoleApplication1.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="funktionen.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="funktionen.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

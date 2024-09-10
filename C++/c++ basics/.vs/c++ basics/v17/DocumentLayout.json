@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\l.schmalhaus\\source\\repos\\c\u002B\u002B basics\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A56F229-46AB-46DE-BD2B-75DB6B5796EE}|c\u002B\u002B basics\\c\u002B\u002B basics.vcxproj|C:\\Users\\l.schmalhaus\\source\\repos\\c\u002B\u002B basics\\c\u002B\u002B basics\\c\u002B\u002B basics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1A56F229-46AB-46DE-BD2B-75DB6B5796EE}|c\u002B\u002B basics\\c\u002B\u002B basics.vcxproj|solutionrelative:c\u002B\u002B basics\\c\u002B\u002B basics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "c\u002B\u002B basics.cpp",
+              "DocumentMoniker": "C:\\Users\\l.schmalhaus\\source\\repos\\c\u002B\u002B basics\\c\u002B\u002B basics\\c\u002B\u002B basics.cpp",
+              "RelativeDocumentMoniker": "c\u002B\u002B basics\\c\u002B\u002B basics.cpp",
+              "ToolTip": "C:\\Users\\l.schmalhaus\\source\\repos\\c\u002B\u002B basics\\c\u002B\u002B basics\\c\u002B\u002B basics.cpp*",
+              "RelativeToolTip": "c\u002B\u002B basics\\c\u002B\u002B basics.cpp*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-27T09:01:07.256Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

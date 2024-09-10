@@ -1,98 +1,80 @@
 #include <iostream>
+#include <vector>
+#include <unistd.h> // FÃ¼r die Sleep-Funktion (nur auf Unix-Systemen)
+
 using namespace std;
-#include "funktionen.h"
 
+// Definitionen der Dimensionen des Spielfelds
+const int WIDTH = 20;
+const int HEIGHT = 20;
 
-
-
-int main()
-{
-
- 
-    int choice = 0;                                       // initialisiert mit 0, damit er niemals nicht definiert ist
-    do 
-    {                                                     /* do führt er mindestens einmal aus (fußgesteuerte Schleife)*/
-
-        int a, b, ergebnis;                                 // initialisiert
-        cout << "Was wollen Sie machen?\n\n(1) Addieren \n(2) Subtrahieren \n(3) Multiplizieren \n(4) Dividieren \n(5) Beenden \n\n"; // gibt den Text aus
-        cin >> choice;
-        system("cls");                                    // system call : cls = clean screen  
-
-    
-        
-
-
-        if(choice > 0 && choice < 5)
-		{
-			cout << "Bitte geben Sie die erste Zahl ein: ";
-			cin >> a;
-			cout << "Bitte geben Sie die zweite Zahl ein: ";
-			cin >> b;
-		}
-
-
-        switch (choice)
-        {
-        case 1:
-            ergebnis = addieren(a , b);                                             // gibt das Ergebnis aus
-            break;
-
-        case 2:
-            ergebnis = subtrahieren(a, b);
-            break;
-
-        case 3:
-            ergebnis = multiplizieren(a, b);
-            break;
-
-
-		case 4:
-			ergebnis = dividieren(a, b);
-			break;
-
-
-		case 5:
-			break;
-
-		default:                                                                    // damit die Schlaufe nicht weiter durchbrennt
-            cout << "Ungueltige Eingabe.\n";
-            /*cout << "Erneut versuchen?\n 1 = ja\n 0 = nein\n";
-            cin >> choice;
-            system("cls");
-
-            if (choice = 1)
-			{
-				cout << "Was wollen Sie machen?\n\n(1) Addieren \n(2) Subtrahieren \n(3) Multiplizieren \n(4) Dividieren \n(5) Beenden \n\n"; // gibt den Text aus
-				cin >> choice;
-				system("cls");
-            }
-            else
-			{
-				cout << "Auf Wiedersehen!\n\n";
-            }*/
-
-			break;
+// Funktion, die den aktuellen Zustand des Spielfelds ausgibt
+void printGrid(const vector<vector<int>>& grid) {
+    for (int i = 0; i < HEIGHT; i++) {
+        for (int j = 0; j < WIDTH; j++) {
+            cout << (grid[i][j] ? "O" : ".") << " ";
         }
-
-        if (choice > 0 && choice < 5)
-        {
-            cout << "\nDas Ergebnis ist: " << ergebnis << "\n Moechten Sie von vorne anfangen?\n\n";   //diesen Satz wollen wir nur haben, wenn gerechnet wird, also alles außer 5
-        }
-
-    }while(choice != 5);                                  //prüft,  ob die Bedingung noch zum Weitermachen erfüllt ist  // != ist ! = (ungleich)
-
-    cout << "Auf Wiedersehen!\n\n";
-    return 0;
-
-    while (choice) {                                      // ist die Bedingung vorhanden, wird sie überhaupt erst ausgeführt (kopfgesteuerte Schleife)
-
+        cout << endl;
     }
-    
+}
 
-   
+// Funktion, die die Anzahl der lebenden Nachbarn einer Zelle berechnet
+int countLivingNeighbors(const vector<vector<int>>& grid, int x, int y) {
+    int count = 0;
+    for (int i = -1; i <= 1; i++) {
+        for (int j = -1; j <= 1; j++) {
+            if (i == 0 && j == 0) continue; // Die Zelle selbst wird nicht gezÃ¤hlt
+            int newX = x + i;
+            int newY = y + j;
+            if (newX >= 0 && newX < HEIGHT && newY >= 0 && newY < WIDTH) {
+                count += grid[newX][newY];
+            }
+        }
+    }
+    return count;
+}
 
-   
+// Funktion, die das Spielfeld fÃ¼r die nÃ¤chste Generation aktualisiert
+void updateGrid(vector<vector<int>>& grid) {
+    vector<vector<int>> newGrid = grid;
 
+    for (int i = 0; i < HEIGHT; i++) {
+        for (int j = 0; j < WIDTH; j++) {
+            int livingNeighbors = countLivingNeighbors(grid, i, j);
+            if (grid[i][j] == 1) {
+                // Regel 1 und 3: Zelle stirbt durch UnterbevÃ¶lkerung oder ÃœberbevÃ¶lkerung
+                if (livingNeighbors < 2 || livingNeighbors > 3) {
+                    newGrid[i][j] = 0;
+                }
+            }
+            else {
+                // Regel 4: Zelle wird durch Reproduktion lebendig
+                if (livingNeighbors == 3) {
+                    newGrid[i][j] = 1;
+                }
+            }
+        }
+    }
+    grid = newGrid;
+}
 
-    
+int main() {
+    // Initiales Spielfeld
+    vector<vector<int>> grid(HEIGHT, vector<int>(WIDTH, 0));
+
+    // Ein einfaches Glider-Muster initialisieren
+    grid[1][2] = 1;
+    grid[2][3] = 1;
+    grid[3][1] = 1;
+    grid[3][2] = 1;
+    grid[3][3] = 1;
+
+    while (true) {
+        printGrid(grid);
+        updateGrid(grid);
+        usleep(200000); // Pause zwischen den Generationen (200 ms)
+        cout << "\033[H\033[J"; // Bildschirm lÃ¶schen
+    }
+
+    return 0;
 }
