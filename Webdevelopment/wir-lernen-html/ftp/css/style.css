@@ -1,0 +1,116 @@
+*{
+    padding:20px;
+    margin:0;
+}
+body{
+    background: #035a62;
+    color:black;
+    font-family:Verdana, tahoma, sans-serif;
+    font-size:18px;
+    line-heigt:150%;
+    padding:10px;  /*gut für mobile*/
+}
+h1, h2, h3, h4, h5, h6{
+    color: #4c16b9;
+}
+h1{
+    margin-top:30px;
+    margin-bottom:35px;
+    font-size:35px;
+    background: #9c31ff;
+    border-radius:10px;
+    border: solid 5px rebeccapurple;
+    -box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+
+    line-height:115%;
+}
+h2{
+    margin-bottom:9px;
+    font-size:25px;
+    line-height:110%;
+}
+h3{
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size: 18px;
+    line-height:110%;
+}
+
+p, ol, ul, table, figure { /*findest du einen Absatz, eine ordered list, eine unordered list & eine Tabelle, mach das:*/
+    margin-bottom:30px;
+
+}
+
+div.wrapper {
+    max-width:1100px;
+    margin:0 auto 0 auto; /*oben, rechts, unten, links:  nimm re/li so viel Platz, wie du kriegen kannst*/
+    text-align:justify;
+    p{
+        text-align:justify; /*macht Blocktext*/
+    }
+}
+
+.wichtig{
+    color: #4c16b9;
+    font-weight: bold;
+    font-style:italic;
+    text-decoration: underline;
+}
+p.richtig-wichtig{
+    background: orange;
+    border-radius:10px;
+    border: solid 5px rebeccapurple;
+    padding: 10px 15px;
+    color: #2c1c03;
+    font-weight:bold;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover, a:focus {
+    color: blue;
+}
+
+a:active {
+    color: yellowgreen;
+}
+p.richtig-wichtig a{  /*finde das a(link) in dem Absatz*/
+    text-decoration: underline;
+    color:deepskyblue;
+}
+a.btn{  /*für den button (btn)*/
+    background:yellow;
+    padding: 1px 3px;
+    border-radius:10px;
+    border:10px;
+    display: inline-block; /*der Button soll sich wie ein Blockelement verhalten*/
+    margin: 20px 0;
+}
+
+a.btn:hover{  /*für den hover auf dem button (btn)*/
+    background: rgb(240, 146, 255);
+    padding: 1px 3px;
+    border-radius:10px;
+    border:10px;
+    -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: all 2s ease 0s;
+}
+
+img.img-fluid{
+    max-width:100%;
+    height:auto;
+
+}

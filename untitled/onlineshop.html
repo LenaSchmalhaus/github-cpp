@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Shop</title>
+    <style>
+        body {
+            font-family: 'Serif', sans-serif;
+            background-color: #f3f1e5; /* Off-white background */
+            margin: 0;
+            padding: 0;
+            color: #2b2e25; /* Earthy tone for text */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #2d4a3b; /* Deep green with blue undertones */
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .shop-now {
+            background-color: #d4af37; /* Gold button */
+            color: #2d4a3b;
+            border-radius: 50px;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .shop-now:hover {
+            transform: scale(1.1);
+        }
+
+        .hero {
+            margin-top: 100px; /* Space for fixed header */
+            text-align: center;
+            padding: 100px 20px;
+            background: url('placeholder-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: #2d4a3b;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .products-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #d4af37; /* Gold border */
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card .shop-now {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            visibility: hidden;
+        }
+
+        .product-card:hover .shop-now {
+            visibility: visible;
+        }
+
+        footer {
+            background-color: #2d4a3b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .gold-divider {
+            border: none;
+            height: 2px;
+            background-color: #d4af37; /* Golden divider */
+            width: 50%;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Jewelry by [Your Name]</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <button class="shop-now">Shop Now</button>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Exclusive, Handcrafted Jewelry</h1>
+    <p>High-quality, unique pieces that elevate your style.</p>
+    <button class="shop-now">Shop Now</button>
+</section>
+
+<section class="products-section">
+    <div class="product-card">
+        <img src="placeholder-product.jpg" alt="Product Image">
+        <h3>Elegant Necklace</h3>
+        <p>$99.99</p>
+        <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-card">
+        <img src="placeholder-product.jpg" alt="Product Image">
+        <h3>Gold Earrings</h3>
+        <p>$49.99</p>
+        <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-card">
+        <img src="placeholder-product.jpg" alt="Product Image">
+        <h3>Silver Bracelet</h3>
+        <p>$79.99</p>
+        <button class="shop-now">Shop Now</button>
+    </div>
+</section>
+
+<hr class="gold-divider">
+
+<footer>
+    &copy; 2024 Jewelry by [Your Name] - All Rights Reserved
+</footer>
+
+</body>
+</html>

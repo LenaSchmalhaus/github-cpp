@@ -1,0 +1,3 @@
+C:/Users/l.schmalhaus/Desktop/Strings/Strings/cmake-build-debug/CMakeFiles/Strings.dir
+C:/Users/l.schmalhaus/Desktop/Strings/Strings/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/l.schmalhaus/Desktop/Strings/Strings/cmake-build-debug/CMakeFiles/rebuild_cache.dir
