@@ -1,0 +1,8 @@
+# ninja log v6
+6	695	7481813526815083	CMakeFiles/funktionenpointer.dir/funktionen.cpp.obj	b011a9de34ac787d
+27	718	7481831325137022	CMakeFiles/funktionenpointer.dir/main.cpp.obj	9d819961bd5786ae
+31	743	7481831325166665	CMakeFiles/funktionenpointer.dir/funktionen.cpp.obj	b011a9de34ac787d
+743	928	7481831332293721	funktionenpointer.exe	51ef7f56989ae941
+12	689	7481837137144726	CMakeFiles/funktionenpointer.dir/main.cpp.obj	9d819961bd5786ae
+11	691	7481837634120324	CMakeFiles/funktionenpointer.dir/funktionen.cpp.obj	b011a9de34ac787d
+692	776	7481837640931889	funktionenpointer.exe	51ef7f56989ae941
