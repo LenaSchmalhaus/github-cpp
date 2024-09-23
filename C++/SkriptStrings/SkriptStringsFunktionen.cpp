@@ -1,7 +1,8 @@
-
 #include "SkriptStringsFunktionen.h"
 
-/*
+
+
+
 //1
 
 void ostrcpy(char *ziel, const char *quelle) {
@@ -99,13 +100,19 @@ void leftstr(char *ziel, const char *quelle, int anz) {
 //8
 
 void rightstr(char *ziel, const char *quelle, int anz) {
-    int laenge = strlen(quelle);
-    if (anz > laenge) anz = laenge; // Bereichsüberschreitung verhindern
+    int laenge = ostrlen(quelle);  // Länge des Quellstrings bestimmen
+    if (anz > laenge) anz = laenge;  // Sicherstellen, dass anz nicht größer als der String ist
+                                                                                                                            // Zielposition im Zielstring finden, um die Zeichen an der richtigen Stelle zu platzieren
+    int startPosZiel = ostrlen(ziel) - anz;                                                                                 // Startposition im Zielstring für die letzten Zeichen
+
+                                                                                                                            // Zeichen kopieren
     for (int i = 0; i < anz; i++) {
-        ziel[i] = quelle[laenge - anz + i];
+        ziel[startPosZiel + i] = quelle[laenge - anz + i];  // An die richtige Stelle kopieren
     }
-    ziel[anz] = '\0'; // Endekennung
+
+    ziel[ostrlen(ziel)] = '\0';  // Endekennung setzen, falls nötig
 }
+
 
 //9
 
@@ -170,9 +177,9 @@ void toWord(unsigned long wert, string &ziel) {
     ziel = inWorten(wert);
 }
 
-*/
 
-/*
+
+
 void leftstr(char* ziel, char* quelle, int anz)
 {
 
@@ -197,11 +204,49 @@ void leftstr(char* ziel, char* quelle, int anz)
     cout << endl;
     ziel[i]='\0';
 }
-*/
+
+
+
+
+
+
+
+
+int summe(int x, int y)
+{
+    int ergebnis = x + y;
+    return ergebnis;
+}
+
+int quadro(int ergebnis)
+{
+    int quadrat, quadro;
+    if(ergebnis == 50)
+    {
+        quadrat = ergebnis*ergebnis;
+        return quadrat;
+    }
+
+    if(ergebnis < 50)
+    {
+        quadrat = ergebnis*ergebnis;
+        quadro = quadrat*quadrat;
+        return quadro;
+    }
+}
+
 
 
 void leftstring(char* ziel, char* quelle, int anz)
 {
+    int laengequelle = ostrlen(quelle);
+
+    while (anz > laengequelle)
+    {
+        cout << "Die Anzahl ist zu lang, bitte versuche es erneut!" << endl;
+        cin >> anz;
+    }
+
     int i = 0;
     // Bei der ersten Schleife sind stet
     while (ziel[i] && quelle[i]) {
@@ -212,14 +257,60 @@ void leftstring(char* ziel, char* quelle, int anz)
             i++;
         }
 
-        while (ziel[i]) {
+        while (ziel[i]!='\0') {
             cout << ziel[i];
             i++;
         }
-
-
     }
 
     cout << endl << endl;
     ziel[i] = '\0';
 }
+
+
+
+void rightstring(char*ziel, char*quelle, int anz)
+{
+    int quellenlaenge = ostrlen(quelle);
+
+    while (anz > quellenlaenge)
+    {
+        cout << "Das hat nicht geklappt, deine Zahl ist größer, als der String lang ist. Versuche es nochmal!" << endl;
+        cin >> anz;
+    }
+
+    int laengeq = ostrlen(quelle);
+    int laengez = ostrlen(ziel);
+    int posx = laengeq - anz;
+    int posy = laengez - anz;
+    int i = laengez;
+    int j = laengeq;
+
+    while(quelle[i] && ziel[i])
+    {
+        while (anz < ziel[i] !='\0') {
+            quelle[i] = ziel[i];
+            cout << ziel[i];
+            i--;
+            anz--;
+        }
+
+        while(ziel[i] !='\0')
+        {
+            cout << ziel[i];
+            i++;
+        }
+    }
+    cout << endl << endl;
+    ziel[i] = '\0';
+
+
+
+
+
+
+
+
+}
+
+

@@ -6,8 +6,8 @@
 using namespace std;
 
 
-#ifndef SKRIPTSTRINGSFUNKTIONEN_H
-#define SKRIPTSTRINGSFUNKTIONEN_H
+//#ifndef SKRIPTSTRINGSFUNKTIONEN_H
+//#define SKRIPTSTRINGSFUNKTIONEN_H
 
 /*
 //1
@@ -30,12 +30,17 @@ void rightstr();
 void midstr();
 //10
 void toWord();
+
+
+
+
+
+
+int summe(int x, int y);
+int quadro(int ergebnis);
 */
 
-
 void leftstring(char*,char*,int);
+void rightstring(char*, char*, int);
 
-
-
-
-#endif //SKRIPTSTRINGSFUNKTIONEN_H
+//#endif //SKRIPTSTRINGSFUNKTIONEN_H

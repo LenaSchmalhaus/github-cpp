@@ -1,5 +1,6 @@
-#include <iostream>
 #include "SkriptStringsFunktionen.h"
+
+
 
 int main()
 {
@@ -108,7 +109,43 @@ int main()
     cout << "Die Zahl in Worten: " << wort << endl;
 
 
-*/
+
+
+
+
+
+
+int x, y;
+    int ergebnis;
+
+    cout << "Gib zwei Zahlen ein, die miteinander verrechnet werden sollen!" << endl;
+cin >> x >> y;
+
+   ergebnis = summe(x, y);
+
+cout << "Die Summe lautet: '" << ergebnis << endl;
+
+    ergebnis= quadro(ergebnis);
+
+cout << "Das Quadrat des Ergebnisses lautet: '" << ergebnis << endl;
+
+
+
+int feld[10];
+
+    for (int i = 0; i < 10; i++)
+    {
+        cin >> feld[i];
+
+    }
+    for (int y; y < 10; y++)
+    {
+        cout << feld[y] << ", ";
+
+    }
+    */
+
+
 
     char input[100];
     char source[100];
@@ -124,9 +161,7 @@ int main()
     cin >> anz;
 
 
-    leftstring(input, source, anz);
-
-
+    rightstring(input, source, anz);
 
 
     return 0;
