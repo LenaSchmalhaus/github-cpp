@@ -1,3 +1,0 @@
-C:/Users/l.schmalhaus/source/repos/GitHub/github-cpp/C++/SkriptStrings/cmake-build-debug/CMakeFiles/SkriptStrings.dir
-C:/Users/l.schmalhaus/source/repos/GitHub/github-cpp/C++/SkriptStrings/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/l.schmalhaus/source/repos/GitHub/github-cpp/C++/SkriptStrings/cmake-build-debug/CMakeFiles/rebuild_cache.dir
