@@ -1,0 +1,3 @@
+C:/Users/l.schmalhaus/source/repos/GitHub/github-cpp/C++/Uebungen Skript Kordt/cmake-build-debug/CMakeFiles/Uebungen_Skript_Kordt.dir
+C:/Users/l.schmalhaus/source/repos/GitHub/github-cpp/C++/Uebungen Skript Kordt/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/l.schmalhaus/source/repos/GitHub/github-cpp/C++/Uebungen Skript Kordt/cmake-build-debug/CMakeFiles/rebuild_cache.dir

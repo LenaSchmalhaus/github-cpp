@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Uebungen_Skript_Kordt",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Uebungen_Skript_Kordt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Uebungen_Skript_Kordt-Debug-88b7c83813a7a2aa4978.json",
+					"name" : "Uebungen_Skript_Kordt",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/l.schmalhaus/source/repos/GitHub/github-cpp/C++/Uebungen Skript Kordt/cmake-build-debug",
+		"source" : "C:/Users/l.schmalhaus/source/repos/GitHub/github-cpp/C++/Uebungen Skript Kordt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
