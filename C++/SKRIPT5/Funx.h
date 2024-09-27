@@ -11,8 +11,8 @@ using namespace std;
 
 void mixstring(char*,char*,char*);
 
-
-
+void mixstring1(char*,char*,char*);
+void ostrstr(char*,char*);
 
 
 
