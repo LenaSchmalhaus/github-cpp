@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="logo">YourLogo</div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="Product.html">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="../Shopping%20Cart/shoppingcart.html">Cart</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="cart">
+        <a href="#">Cart <span id="cart-count">0</span></a>
+    </div>
+</nav>
+
+<!-- Product Details -->
+<section class="product-details">
+    <div class="product-image">
+        <img src="product1-large.jpg" alt="Product Name">
+    </div>
+    <div class="product-info">
+        <h1>Product Name</h1>
+        <p class="price">$99.99</p>
+        <p class="description">
+            This is a detailed description of the product, highlighting its features and specifications.
+        </p>
+        <form class="add-to-cart-form">
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+            </select>
+            <label for="color">Color:</label>
+            <select id="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+            <button type="submit" class="btn">Add to Cart</button>
+        </form>
+    </div>
+</section>
+
+<!-- Suggested Products Section -->
+<section class="suggested-products">
+    <h2>Related Products</h2>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="related-product1.jpg" alt="Related Product 1">
+            <h3>Related Product 1</h3>
+            <p>$49.99</p>
+        </div>
+        <div class="product-item">
+            <img src="related-product2.jpg" alt="Related Product 2">
+            <h3>Related Product 2</h3>
+            <p>$59.99</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <ul>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <form class="newsletter">
+            <input type="email" placeholder="Subscribe to our newsletter">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <p>&copy; 2024 Cahiba Creations</p>
+</footer>
+
+</body>
+</html>

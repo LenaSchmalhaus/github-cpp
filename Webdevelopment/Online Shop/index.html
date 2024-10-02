@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="logo">YourLogo</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Product%20Page/Product.html">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="Shopping%20Cart/shoppingcart.html">Cart</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="cart">
+        <a href="#">Cart <span id="cart-count">0</span></a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Our Online Store</h1>
+        <p>Shop the best products at unbeatable prices</p>
+        <a href="#featured" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- Search Bar -->
+<section class="search-section">
+    <input type="text" placeholder="Search for products..." class="search-bar">
+</section>
+
+<!-- Categories Section -->
+<section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+        <div class="category-item">
+            <a href="#"><img src="category1.jpg" alt="Category 1"></a>
+            <h3>Category 1</h3>
+        </div>
+        <div class="category-item">
+            <a href="#"><img src="category2.jpg" alt="Category 2"></a>
+            <h3>Category 2</h3>
+        </div>
+        <div class="category-item">
+            <a href="#"><img src="category3.jpg" alt="Category 3"></a>
+            <h3>Category 3</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section id="featured" class="featured-products">
+    <h2>Bestsellers</h2>
+    <div class="product-grid">
+
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <a href="Product%20Page/Product1.html" class="product-link">
+                <div class="product-image">
+                    <img src="product1-main.jpg" class="main-image" alt="Product 1"> //wird als erstes angezeigt
+                    <img src="product1-hover.jpg" class="hover-image" alt="Product 1 Hover"> // erscheint beim hovern
+                </div>
+                <div class="product-info">
+                    <h3>Product 1</h3>
+                    <p class="price">$99.99</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <a href="product2.html" class="product-link">
+                <div class="product-image">
+                    <img src="product2-main.jpg" class="main-image" alt="Product 2">
+                    <img src="product2-hover.jpg" class="hover-image" alt="Product 2 Hover">
+                </div>
+                <div class="product-info">
+                    <h3>Product 2</h3>
+                    <p class="price">$79.99</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <ul>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <form class="newsletter">
+            <input type="email" placeholder="Subscribe to our newsletter">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <p>&copy; 2024 Cahiba Creations</p>
+</footer>
+
+</body>
+</html>
