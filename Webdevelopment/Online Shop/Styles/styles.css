@@ -1,16 +1,21 @@
-/* Styles for Product Cards with Hover Effect */
+/* === Allgemeine Styles für die Produktkarten mit Hover-Effekt === */
 
-/* Container for product card */
+/* Container für die Produktkarte */
 .product-card {
     position: relative;
-    width: 300px;
+    width: 30%; /* Drei Produktkarten pro Reihe */
     overflow: hidden;
     text-align: center;
     border: 1px solid #ddd;
-    margin: 20px;
+    margin: 20px 0; /* Abstand zwischen den Karten */
+    transition: transform 0.3s ease;
 }
 
-/* Hide the hover image and price by default */
+.product-card:hover {
+    transform: scale(1.05); /* Vergrößere die Karte beim Hover */
+}
+
+/* Verstecke das Hover-Bild standardmäßig */
 .product-card .hover-image {
     position: absolute;
     top: 0;
@@ -22,42 +27,93 @@
     object-fit: cover;
 }
 
-.product-card .price {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #333;
-}
-
-/* Hover Effect - show the hover image and price */
+/* Zeige Hover-Bild beim Hover */
 .product-card:hover .hover-image {
     opacity: 1;
 }
 
+/* Verstecke das Hauptbild beim Hover */
 .product-card:hover .main-image {
     opacity: 0;
 }
 
-.product-card:hover .price {
-    opacity: 1;
-}
-
-/* Product info styling */
+/* Preis und Titel Styling */
 .product-info {
     padding: 15px;
     background-color: #fff;
 }
 
 .product-info h3 {
-    font-size: 1.1em;
-    margin: 0;
+    font-size: 1.2em;
+    margin: 0 0 10px;
     color: #333;
 }
 
-/* Anchor link styling to make the whole card clickable */
+.product-card .price {
+    opacity: 0; /* Verstecke den Preis standardmäßig */
+    transition: opacity 0.4s ease-in-out;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Zeige den Preis beim Hover */
+.product-card:hover .price {
+    opacity: 1;
+}
+
+/* Mach den gesamten Bereich der Produktkarte klickbar */
 .product-link {
     text-decoration: none;
     color: inherit;
     display: block;
 }
+
+/* === Layout für die Produktgitter auf der Homepage === */
+
+/* Container für das Produktgitter */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Abstand zwischen den Karten */
+    margin: 40px 0;
+}
+
+/* === Responsives Design für kleine Bildschirme === */
+
+/* Auf Bildschirmen mit einer Breite von bis zu 768px wird jede Produktkarte 100% breit angezeigt */
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%; /* Eine Produktkarte pro Reihe */
+    }
+
+    .product-grid {
+        gap: 10px; /* Weniger Abstand auf kleinen Bildschirmen */
+    }
+}
+
+/* === Horizontale Scroll-Leiste für die Shop-Seite (z.B. für Kategorien) === */
+
+/* Horizontale Scrollleiste für Produktkarusselle */
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-carousel .product-card {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Abstand zwischen den Karten im Karussell */
+}
+
+.scroll-right {
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+}
+
+/* === Zusätzliche Anpassungen für spezifische Sektionen (falls benötigt) === */
+
+/* Falls du spezielle Anpassungen für andere Sektionen brauchst, kannst du sie hier hinzufügen */

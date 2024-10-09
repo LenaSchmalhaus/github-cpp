@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>Shop - Categories</title>
     <link rel="stylesheet" href="../Styles/styles.css">
 </head>
 <body>
@@ -24,48 +24,140 @@
     </div>
 </nav>
 
-<!-- Product Details -->
-<section class="product-details">
-    <div class="product-image">
-        <img src="product1-large.jpg" alt="Product Name">
-    </div>
-    <div class="product-info">
-        <h1>Product Name</h1>
-        <p class="price">$99.99</p>
-        <p class="description">
-            This is a detailed description of the product, highlighting its features and specifications.
-        </p>
-        <form class="add-to-cart-form">
-            <label for="size">Size:</label>
-            <select id="size">
-                <option value="S">Small</option>
-                <option value="M">Medium</option>
-                <option value="L">Large</option>
-            </select>
-            <label for="color">Color:</label>
-            <select id="color">
-                <option value="red">Red</option>
-                <option value="blue">Blue</option>
-            </select>
-            <button type="submit" class="btn">Add to Cart</button>
-        </form>
-    </div>
-</section>
+<!-- Kategorien der Schmuckstücke (alphabetisch sortiert) -->
+<section id="shop-categories">
+    <h2>Shop by Category</h2>
 
-<!-- Suggested Products Section -->
-<section class="suggested-products">
-    <h2>Related Products</h2>
-    <div class="product-grid">
-        <div class="product-item">
-            <img src="related-product1.jpg" alt="Related Product 1">
-            <h3>Related Product 1</h3>
-            <p>$49.99</p>
+    <!-- Kategorie: Anhänger und Ketten -->
+    <div class="category-section">
+        <h3>Anhänger und Ketten</h3>
+        <div class="product-carousel">
+            <div class="product-card">
+                <a href="product.php?id=1" class="product-link">
+                    <div class="product-image">
+                        <img src="images/pendant1-main.jpg" class="main-image" alt="Pendant 1">
+                        <img src="images/pendant1-hover.jpg" class="hover-image" alt="Pendant 1 Hover">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pendant 1</h3>
+                        <p class="price">$49.99</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Weitere Produkte... -->
+            <button class="scroll-right">→</button>
         </div>
-        <div class="product-item">
-            <img src="related-product2.jpg" alt="Related Product 2">
-            <h3>Related Product 2</h3>
-            <p>$59.99</p>
+        <a href="pendants.php" class="see-all">See All</a>
+    </div>
+
+    <!-- Kategorie: Armbänder -->
+    <div class="category-section">
+        <h3>Armbänder</h3>
+        <div class="product-carousel">
+            <div class="product-card">
+                <a href="product.php?id=2" class="product-link">
+                    <div class="product-image">
+                        <img src="images/bracelet1-main.jpg" class="main-image" alt="Bracelet 1">
+                        <img src="images/bracelet1-hover.jpg" class="hover-image" alt="Bracelet 1 Hover">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bracelet 1</h3>
+                        <p class="price">$39.99</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Weitere Produkte... -->
+            <button class="scroll-right">→</button>
         </div>
+        <a href="bracelets.php" class="see-all">See All</a>
+    </div>
+
+    <!-- Kategorie: Broschen -->
+    <div class="category-section">
+        <h3>Broschen</h3>
+        <div class="product-carousel">
+            <div class="product-card">
+                <a href="product.php?id=3" class="product-link">
+                    <div class="product-image">
+                        <img src="images/brooch1-main.jpg" class="main-image" alt="Brooch 1">
+                        <img src="images/brooch1-hover.jpg" class="hover-image" alt="Brooch 1 Hover">
+                    </div>
+                    <div class="product-info">
+                        <h3>Brooch 1</h3>
+                        <p class="price">$29.99</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Weitere Produkte... -->
+            <button class="scroll-right">→</button>
+        </div>
+        <a href="brooches.php" class="see-all">See All</a>
+    </div>
+
+    <!-- Kategorie: Ohrringe -->
+    <div class="category-section">
+        <h3>Ohrringe</h3>
+        <div class="product-carousel">
+            <div class="product-card">
+                <a href="product.php?id=4" class="product-link">
+                    <div class="product-image">
+                        <img src="images/earring1-main.jpg" class="main-image" alt="Earring 1">
+                        <img src="images/earring1-hover.jpg" class="hover-image" alt="Earring 1 Hover">
+                    </div>
+                    <div class="product-info">
+                        <h3>Earring 1</h3>
+                        <p class="price">$19.99</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Weitere Produkte... -->
+            <button class="scroll-right">→</button>
+        </div>
+        <a href="earrings.php" class="see-all">See All</a>
+    </div>
+
+    <!-- Kategorie: Ringe -->
+    <div class="category-section">
+        <h3>Ringe</h3>
+        <div class="product-carousel">
+            <div class="product-card">
+                <a href="product.php?id=5" class="product-link">
+                    <div class="product-image">
+                        <img src="images/ring1-main.jpg" class="main-image" alt="Ring 1">
+                        <img src="images/ring1-hover.jpg" class="hover-image" alt="Ring 1 Hover">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ring 1</h3>
+                        <p class="price">$59.99</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Weitere Produkte... -->
+            <button class="scroll-right">→</button>
+        </div>
+        <a href="rings.php" class="see-all">See All</a>
+    </div>
+
+    <!-- Kategorie: Sale -->
+    <div class="category-section">
+        <h3>Sale</h3>
+        <div class="product-carousel">
+            <div class="product-card">
+                <a href="product.php?id=6" class="product-link">
+                    <div class="product-image">
+                        <img src="images/sale-product1-main.jpg" class="main-image" alt="Sale Product 1">
+                        <img src="images/sale-product1-hover.jpg" class="hover-image" alt="Sale Product 1 Hover">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sale Product 1</h3>
+                        <p class="price">$29.99</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Weitere Produkte... -->
+            <button class="scroll-right">→</button>
+        </div>
+        <a href="sale.php" class="see-all">See All</a>
     </div>
 </section>
 
