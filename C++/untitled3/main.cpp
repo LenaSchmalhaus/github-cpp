@@ -18,12 +18,21 @@ public:
 
     void add(int value)
     {
+        if(size >=100)
+        { cout << "Queue is full." << endl;
+        return;}
+
         array[size] = value;            //setzt das neue Element an das Ende der Queue
         size++;                         //erhöht size um 1
     }
 
     void remove()
     {
+        if (size == 0)
+        {
+            cout << "Queue is empty." << endl;
+            return;
+        }
         for(int i = 0; i < size-1; i++)
         {  array[i] = array[i+1];              //verschiebt alle Elemente um eine Position nach vorne, wodurch das erste Element entfernt wird.
             size--;                             // verringert size um 1
